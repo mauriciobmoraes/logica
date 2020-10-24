@@ -1,0 +1,21 @@
+body{
+	background: #CCCCCC; /*cinza em hexadecimal */
+	text-align: center;
+}
+
+#banner {
+	width: 100%
+}
+
+#missao {
+	font-size: 20px
+}
+
+em strong {
+	color: #FF0000; /* red em hexadecimal */
+}
+
+
+
+
+
