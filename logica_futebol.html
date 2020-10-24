@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+	
+	function pulalinha() {
+
+		document.write("<br><hr><br>");
+	}
+
+	function mostra (frase){
+
+		document.write(frase);
+		pulalinha();
+
+	}
+
+	var time = prompt("Qual seu time ?");
+	var vitorias = parseInt(prompt("Quantas vitórias seu time conquistou ?"));
+	var empates = parseInt(prompt("Quantos empates seu time conquistou ?"));
+	var pontos = vitorias * 3 + empates;
+
+	mostra(" O "+ time + " conquistou " + pontos + " pontos ! ");
+
+
+</script>

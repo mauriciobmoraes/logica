@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+
+<script>
+    
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        var imc = Math.round(peso / (altura * altura));
+        return imc;
+    }
+
+    var nome = prompt("Informe seu nome : ");
+    var altura = prompt("Informe a sua altura : ");
+    var peso = prompt("Informe seu peso : ");
+ 
+    var imc = calculaImc(altura, peso);
+    mostra("O Índice de Massa Corporal de " + nome + " é " + (imc) + ".");
+
+    if (imc < 18.5) {
+
+        mostra("O seu IMC está abaixo do recomendado pela Organização Mundial da Saúde ! ");
+
+    }
+
+    if (imc > 35) {
+
+        mostra("O seu IMC está acima do recomendado pela Organização Mundial da Saúde ! ");
+
+    }
+
+    if (imc >= 18.5 && imc <= 35) {
+
+        mostra("O seu IMC está excelente conforme os padões da Organização Mundial da Saúde ! ");
+
+    }
+
+
+</script>
